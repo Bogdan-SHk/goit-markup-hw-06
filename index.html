@@ -407,6 +407,29 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="footer-form-text">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <div class="footer-form-field">
+              <input
+                class="footer-form-input"
+                type="email"
+                name="email-subscrib"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <label class="footer-form-label" for="mail"></label>
+            </div>
+            <div>
+              <button class="footer-form-button" type="submit">
+                Підписатися
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Модульне вікно -->
@@ -417,6 +440,38 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+        <form>
+          <div class="form-field">
+            <input class="form-input" type="text" name="name" id="user_name" />
+            <label class="form-label" for="user_name">Ім'я</label>
+          </div>
+          <div class="form-field">
+            <input class="form-input" type="tel" name="tel" id="user_tel" />
+            <label class="form-label" for="user_tel">Телефон</label>
+          </div>
+          <div class="form-field">
+            <input class="form-input" type="email" name="email" id="user_email" />
+            <label class="form-label" for="user_email">Пошта</label>
+          </div>
+          <div class="form-field textarea">
+            <textarea
+              class="form-textarea"
+              name="feedback"
+              rows="5"
+              placeholder="Введіть текст"
+              id="user_feedback"
+            ></textarea>
+            <label class="form-label" for="user_feedback">Коментар</label>
+          </div>
+          <div class="form-field checkbox">
+            <input type="checkbox" name="policy" id="policy" />
+            <label class="form-label-policy" for="policy"
+              >Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label
+            >
+          </div>
+          <button class="form-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
